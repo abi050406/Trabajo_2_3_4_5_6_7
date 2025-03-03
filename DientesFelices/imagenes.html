@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes Adaptativas con Porcentajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        article {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1e5799;
+        }
+
+        /* Estilos para imágenes adaptativas con porcentajes */
+        .adaptativa-porcentaje-1 {
+            width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .adaptativa-porcentaje-2 {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .adaptativa-porcentaje-3 {
+            width: 20%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>El Café - Imágenes Adaptativas</h1>
+        
+        <article>
+            <h2>El café</h2>
+            <p>Simplemente café...</p>
+            <img src="imagenes/taza de cafe con granos.jpg" alt="Taza de café con granos" class="adaptativa-porcentaje-1">
+        </article>
+
+        <article>
+            <h2>El café</h2>
+            <p>Energía de vida...</p>
+            <img src="imagenes/granos de cafe.jpg" alt="Granos de café" class="adaptativa-porcentaje-2">
+        </article>
+
+        <article>
+            <h2>Café de montaña o de selva?</h2>
+            <p>Descubre las diferencias entre estos dos tipos de café premium.</p>
+            <img src="imagenes/Comparación de cafés.jpg" alt="Comparación de cafés" class="adaptativa-porcentaje-3">
+        </article>
+    </div>
+</body>
+</html>

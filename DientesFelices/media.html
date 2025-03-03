@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries y Patrón Mostly-Fluid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Resumen oculto por defecto */
+        #resumen {
+            display: none;
+            background-color: #eef6ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Mostly-Fluid Pattern */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .c1, .c2, .c3, .c4, .c5 {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .c1 {
+            background-color: #3f51b5;
+        }
+
+        .c2 {
+            background-color: #5c6bc0;
+        }
+
+        .c3 {
+            background-color: #7986cb;
+        }
+
+        .c4 {
+            background-color: #9fa8da;
+        }
+
+        .c5 {
+            background-color: #c5cae9;
+            color: #333;
+        }
+
+        /* Media Queries */
+        @media (min-width: 600px) {
+            #resumen {
+                display: block;
+            }
+            body {
+                font-size: 16px;
+                color: red;
+            }
+
+            .c2, .c3, .c4, .c5 {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 900px) {
+            body {
+                font-size: 14px;
+                color: black;
+            }
+        }
+
+        @media (min-width: 800px) {
+            .c1 {
+                width: 100%;
+            }
+
+            .c2 {
+                width: 100%;
+            }
+
+            .c3, .c4, .c5 {
+                width: 33.33%;
+            }
+
+            .container {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicio de Media Queries y Mostly-Fluid</h1>
+        
+        <div id="resumen">
+            <h2>Resumen del Contenido</h2>
+            <p>Este es un resumen que aparece cuando la pantalla tiene más de 600px de ancho. Observa cómo cambian los estilos al redimensionar el navegador.</p>
+        </div>
+
+        <div class="content">
+            <h2>Media Queries</h2>
+            <p>Los Media Queries permiten adaptar la representación del contenido a características del dispositivo como la resolución de pantalla.</p>
+            <p>Este texto cambiará de color y tamaño según el ancho de la pantalla:</p>
+            <ul>
+                <li>Menos de 600px: Tamaño según el dispositivo, color normal</li>
+                <li>Entre 600px y 900px: 16px, color rojo</li>
+                <li>Más de 900px: 14px, color negro</li>
+            </ul>
+        </div>
+
+        <h2>Patrón Mostly-Fluid</h2>
+        <p>Este patrón consiste en ir apilando las capas a medida que el tamaño es más pequeño.</p>
+        
+        <div class="flex-container">
+            <div class="c1">Sección 1 - Header</div>
+            <div class="c2">Sección 2 - Contenido Principal</div>
+            <div class="c3">Sección 3 - Sidebar</div>
+            <div class="c4">Sección 4 - Widgets</div>
+            <div class="c5">Sección 5 - Footer</div>
+        </div>
+    </div>
+</body>
+</html>

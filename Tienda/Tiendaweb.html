@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu tienda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Estilos para el contenedor principal */
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Estilos para las columnas */
+        #contenido {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* Sección de productos destacados */
+        #destacados {
+            background-color: #5f9ea0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #destacados h2 {
+            text-align: center;
+            text-shadow: 0 0 3px white;
+        }
+
+        #destacados .contenedor > div {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            width: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 0, 0.3);
+        }
+
+        /* Sección de ofertas */
+        #ofertas {
+            background-color: #f0e68c;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #ofertas h2 {
+            text-align: center;
+            text-shadow: 1px 1px 2px white, 0 0 30px #D46A6A;
+        }
+
+        #ofertas .contenedor > div {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            width: 33.3%;
+            box-shadow: 4px 8px;
+        }
+
+        /* Sección de productos disponibles */
+        #disponible {
+            background-color: #f08080;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #disponible h2 {
+            text-align: center;
+        }
+
+        #disponible .contenedor > div {
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border: solid 5px coral;
+            background-color: white;
+            width: 25%;
+            box-shadow: 4px 8px #D46A6A;
+        }
+
+        /* Estilos para el footer */
+        footer {
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tu tienda</h1>
+    </header>
+
+    <main id="contenido">
+        <!-- Sección de productos destacados -->
+        <section id="destacados">
+            <h2>Productos destacados</h2>
+            <div class="contenedor">
+                <div>Producto 1</div>
+                <div>Producto 2</div>
+            </div>
+        </section>
+
+        <!-- Sección de ofertas -->
+        <section id="ofertas">
+            <h2>Ofertas</h2>
+            <div class="contenedor">
+                <div>Producto 1</div>
+                <div>Producto 2</div>
+                <div>Producto 3</div>
+            </div>
+        </section>
+
+        <!-- Sección de productos disponibles -->
+        <section id="disponible">
+            <h2>Disponible</h2>
+            <div class="contenedor">
+                <div>Producto 1</div>
+                <div>Producto 2</div>
+                <div>Producto 3</div>
+                <div>Producto 4</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos Reservados</p>
+    </footer>
+</body>
+</html>

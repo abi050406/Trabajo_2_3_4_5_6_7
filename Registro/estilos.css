@@ -1,0 +1,20 @@
+/* Selector de etiqueta textarea con ancho de 200px */
+textarea {
+    width: 200px;
+  }
+  
+  /* Estilo para el body con margen de 20px y fuente Verdana */
+  body {
+    margin: 20px;
+    font-family: Verdana;
+  }
+  
+  /* Selector para input con atributo name="email" y fondo #eeeeee */
+  input[name="email"] {
+    background-color: #eeeeee;
+  }
+  
+  /* Selector múltiple para párrafos y labels con fuente Tahoma */
+  p, label {
+    font-family: Tahoma;
+  }
